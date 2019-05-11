@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Masuk">
+
+    <ImageView
+            android:id="@+id/lock"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_screen_lock_portrait_black_24dp"
+            android:background="@color/colorPrimary"/>
+
+    <EditText
+            android:id="@+id/edtLogUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            app:layout_constraintTop_toBottomOf="@id/lock"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
+
+    <EditText
+            android:id="@+id/edtLogPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:layout_constraintTop_toBottomOf="@id/edtLogUser"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"/>
+
+    <Button
+            android:id="@+id/btnMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            app:layout_constraintTop_toBottomOf="@id/edtLogPass"
+            android:layout_marginTop="12dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
